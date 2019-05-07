@@ -25,7 +25,9 @@ public class UserDao {
 		preparedStatement.setInt(9, user.getUsNumber());
 		int i= preparedStatement.executeUpdate();
 		preparedStatement.close();     //关闭preparedStatement资源
+		System.out.println("sadjj");
 		return i;
+		
 	}
 	public static boolean back(Connection connection,User user) throws SQLException {             //判断是否有相同账号
 		String sql="select uId from user";
