@@ -13,7 +13,8 @@ public class Connect_newspaper {
 	public void aaaa(Aa_add aa) {
 		try {
 			DB_Connect DB=new DB_Connect();
-			String sql = "insert into magazine values(?, ?, ?, ?, ?)"; 
+			String sql = "insert into magazine values(?, ?, ?, ?, ?)";
+			System.out.println("jdjidji");
 	    	 pstmt = DB.getCon().prepareStatement(sql);
 	    	 pstmt.setInt(1, aa.getmID());
 			 pstmt.setString(2, aa.getmName());
